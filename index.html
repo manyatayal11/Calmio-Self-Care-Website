@@ -1,0 +1,258 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calmio | Home</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        list-style: none;
+      }
+      body {
+        margin: 0%;
+      }
+      header {
+        padding: 50px;
+        text-align: center;
+        background-color: rgb(235, 146, 114);
+        color: black;
+      }
+      header h1 {
+        font-size: 40px;
+      }
+      nav {
+        background-color: grey;
+        /* overflow: hidden; */
+        display: flex;
+      }
+      nav a {
+        float: left;
+        text-decoration: none;
+        display: block;
+        color: white;
+        padding: 14px 20px;
+        font-size: 20px;
+      }
+      nav a:hover {
+        color: lightcoral;
+        background-color: white;
+      }
+      section {
+        text-align: center;
+        padding-top: 40px;
+        height: 100vh;
+      }
+      section:nth-child(odd) {
+        background-color: rgb(194, 149, 132);
+      }
+      iframe {
+        padding: 0px 5px;
+      }
+      h2 {
+        padding-bottom: 40px;
+      }
+      footer {
+        overflow: hidden;
+        background-color: pink;
+      }
+      footer a {
+        float: left;
+        text-decoration: none;
+        display: block;
+        color: rgb(211, 19, 92);
+        padding: 14px 20px;
+        font-size: 20px;
+      }
+      .copyright {
+        float: right;
+      }
+      section p {
+        margin: 0px 130px;
+      }
+      main {
+        background-color: rgb(197, 146, 128);
+      }
+      @media screen and (max-width: 700px) {
+        nav {
+          flex-direction: column;
+          padding: 10px 0px;
+        }
+
+        .flex-right {
+          margin-left: none;
+        }
+      }
+      .flex-right {
+        margin-left: auto;
+      }
+
+      section h2 span {
+        background: #eeaeca;
+        background: radial-gradient(
+          circle,
+          rgba(238, 174, 202, 1) 0%,
+          rgba(148, 187, 233, 1) 100%
+        );
+        padding: 10px 55px;
+        border-radius: 20px;
+      }
+
+      
+
+.carousel-cell {
+  width: 66%;
+ 
+  margin-right: 10px;
+ 
+  border-radius: 5px;
+  
+}
+
+.end{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* .about-us{
+    margin: 30px;
+} */
+.content{
+    font-size: 1.25em;
+    color: rgb(5, 2, 53);
+}
+.description{
+    margin-top: 20px;
+    font-size: 1.40em;
+}
+/* cell number */
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CALMIO</h1>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Daily challenges</a>
+      <a href="#">My progress</a>
+      <a href="#">Tips</a>
+      <a href="#" class="flex-right">About</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2><span>Welcome to CALMIO!</span></h2>
+        <h3>"Take care of yourself"</h3>
+        <img
+          src="main.jpg"
+          alt="breathe in,breathe out"
+          width="33%"
+          height="70%"
+        />
+      </section>
+
+      <section>
+        <h2><span>Daily challenges</span></h2>
+
+        <p>Take a small step everyday and your mind will thankyou!</p>
+        <h3>Here are your small steps:</h3>
+
+        <ul>
+          <li>
+            <label><input type="checkbox" /> Drink 8 glasses of water.</label>
+          </li>
+          <li>
+            <label><input type="checkbox" /> Get a nature walk for 1 hr.</label>
+          </li>
+          <li>
+            <label
+              ><input type="checkbox" /> Meditate daily early in the
+              morning.</label
+            >
+          </li>
+          <li>
+            <label><input type="checkbox" /> Listen to calming music.</label>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span>Tips</span></h2>
+        <div class="carousel" data-flickity='{ "autoPlay": true }'>
+          <div class="carousel-cell"> <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/bARpudRvNgA?si=ILrdTb7yO995VkcW"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe></div>
+          <div class="carousel-cell"><iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/30U5_b2Ad6E?si=CACDXDXSH2XTOP3q"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe></div>
+          <div class="carousel-cell"><iframe width="560" height="315" src="https://www.youtube.com/embed/8ln4XfRi6uw?si=9ymobMNNA2Nh4OTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          
+        </div>
+        <!--  -->
+      </section>
+
+      <section>
+        <h2><span>"Why calmio exists?" </span></h2>
+        <img class="end" src="favicon-32x32.png" alt="">
+        <div class="about-us">
+        <p class="content">
+          Calmio is your gentle space on the internet—to breathe, reflect, and
+          reconnect with yourself. We believe self-care should be simple,
+          peaceful, and part of every day.
+        </p>
+        <p class="content">
+          This website was created with love by a student who understands the
+          pressure and pace of everyday life. Calmio is here to remind you that
+          small acts of self-kindness can lead to big changes in how you feel.
+        </p>
+        <p class="description">
+          <strong>Calmio</strong> is your peaceful corner on the
+          internet—created to help you slow down, reflect, and reconnect with
+          yourself in a fast-moving world.
+        </p>
+
+        <p class="description">
+          I’m <strong>Manya Tayal</strong>, the creator of Calmio and a student
+          who understands how overwhelming life can feel. I wanted to create a
+          space where small self-care moments—like taking a deep breath or
+          writing down your thoughts—can bring calm and clarity to your day.
+        </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="#">FAQ</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#">Terms and conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#">Privacy policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#">Feedback</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a class="copyright" href="#">&copy;</a>
+    </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>
